@@ -11,7 +11,7 @@ function contestants() {
       <Text textAlign='center' fontSize='sm'>
         2022/23
       </Text>
-      <Box px='4' pt='20' pb='32' maxW='6xl' mx='auto'>
+      <Box px='8' pt='20' pb='32' maxW='6xl' mx='auto'>
         {/* <SimpleGrid mt='12' columns={[1, 1, 2, 3]} spacing='20px'>
         <ContestantsCard />
       </SimpleGrid> */}

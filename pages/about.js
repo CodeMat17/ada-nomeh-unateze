@@ -10,7 +10,7 @@ function About() {
     <Box>
       <BannerCard title={title} url={url} />
 
-      <Box px='4' pt='' pb='40' maxW='3xl' mx='auto'>
+      <Box px='8' pt='' pb='40' maxW='3xl' mx='auto'>
         {/* <Heading textAlign='center'>ABOUT US</Heading> */}
         <Text mt='12'>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora cum

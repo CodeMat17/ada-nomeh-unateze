@@ -12,7 +12,7 @@ import { TbClick } from "react-icons/tb";
 
 function HeroSection() {
   return (
-    <Box px={[4, 4, 4, 4, 0]} pt={[8, 12, 20]} maxW='6xl' mx='auto' minH='96'>
+    <Box pt={[8, 12, 20]} maxW='6xl' mx='auto' minH='96'>
       <Flex
         align='center'
         justify='space-around'
@@ -24,9 +24,9 @@ function HeroSection() {
           pos='relative'
           shadow='dark-lg'
           rounded='full'
-          w={["100%", "400px"]}
+          w={["350px", "400px"]}
           mx='auto'
-          h={["325",  "400px"]}>
+          h={["350", "400px"]}>
           <Image
             alt='beauty queens'
             src='/heroins.webp'
@@ -81,12 +81,19 @@ function HeroSection() {
             filter='auto'
             blur='xl'
           />
-          <Text pos='absolute' right='0' bottom='4' color='tomato' filter='auto' blur='' fontSize='3xl'>
+          <Text
+            pos='absolute'
+            right='0'
+            bottom='4'
+            color='tomato'
+            filter='auto'
+            blur=''
+            fontSize='3xl'>
             •°•❀•°•
           </Text>
         </Box>
 
-        <VStack align={["center", "center", "start"]}>
+        <VStack px={[6, 6, 6, 6, 0]} align={["center", "center", "start"]}>
           <Text
             letterSpacing='1px'
             display={{ base: "none", md: "flex" }}
