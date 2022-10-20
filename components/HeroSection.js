@@ -24,9 +24,9 @@ function HeroSection() {
           pos='relative'
           shadow='dark-lg'
           rounded='full'
-          w={["100%", "320px", "350px", "400px"]}
+          w={["100%", "400px"]}
           mx='auto'
-          h={["290", "320", "350px", "400px"]}>
+          h={["380",  "400px"]}>
           <Image
             alt='beauty queens'
             src='/heroins.webp'

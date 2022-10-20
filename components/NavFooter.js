@@ -81,7 +81,7 @@ function NavFooter() {
           &copy; 2022 Ada Nomeh Unateze Beauty Pageant, all rights reserved.
         </Text>
         <Text mt='2' fontSize='sm' color='gray'>
-          Designed and developed by
+          Designed and developed by {' '}
           <Link
             isExternal
             color='blue.500'
