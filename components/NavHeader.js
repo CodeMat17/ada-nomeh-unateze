@@ -2,6 +2,7 @@ import { Box, Flex, HStack, IconButton, useColorModeValue } from "@chakra-ui/rea
 import Image from "next/image";
 import ColorModeToggleBtn from "./ColorModeToggleBtn";
 import DesktopMenu from "./DesktopMenu";
+import Logo from "./links/Logo";
 import MobileMenu from "./MobileMenu";
 
 function NavHeader() {
@@ -10,20 +11,7 @@ function NavHeader() {
   return (
     <Box as='nav' pos='sticky' top='0' zIndex='60' bg={bg} px='4' py='3'>
       <Flex maxW='6xl' mx='auto' align='center' justify='space-between'>
-        <Box
-          p='0.5'
-          bgGradient='linear(to-r, purple.500, yellow.500)'
-          rounded='full'>
-          <Box pos='relative' w={10} h={10} rounded='full' overflow='hidden'>
-            <Image
-              alt='logo'
-              src='/logo.webp'
-              layout='fill'
-              priority
-              objectFit='contain'
-            />
-          </Box>
-        </Box>
+      <Logo />
         <HStack spacing='4'>
           <ColorModeToggleBtn />
           <MobileMenu />

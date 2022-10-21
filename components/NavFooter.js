@@ -13,6 +13,9 @@ import Image from "next/image";
 import { BsWhatsapp } from "react-icons/bs";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import { RiFacebookFill } from "react-icons/ri";
+import EmailLink from "./links/EmailLink";
+import FacebookLink from "./links/FacebookLink";
+import WhatsAppLink from "./links/WhatsAppLink";
 
 function NavFooter() {
   const iconColor = useColorModeValue("gray.800", "gray.400");
@@ -27,21 +30,9 @@ function NavFooter() {
                 Contact Us
               </Text>
               <HStack spacing='4'>
-                <IconButton
-                  as='a'
-                  href='mailto:adanomehunateze@gmail.com'
-                  color='purple'
-                  icon={<MdOutlineMarkEmailRead size={23} />}
-                  isRound
-                />
-                <IconButton
-                  as='a'
-                  href='https://wa.me/+2348130155308'
-                  target='_blank'
-                  color='green'
-                  icon={<BsWhatsapp size={23} />}
-                  isRound
-                />
+                <EmailLink />
+                
+              <WhatsAppLink />
               </HStack>
             </VStack>
             <VStack align='start'>
@@ -49,14 +40,7 @@ function NavFooter() {
                 Follow Us
               </Text>
               <HStack spacing='4'>
-                <IconButton
-                  as='a'
-                  href='https://www.facebook.com/NomehUnatezeBeautyPageant'
-                  target='_blank'
-                  color='blue.500'
-                  icon={<RiFacebookFill size={23} />}
-                  isRound
-                />
+               <FacebookLink />
               </HStack>
             </VStack>
           </Flex>
@@ -88,7 +72,6 @@ function NavFooter() {
             href='https://www.soft-lutions.com.ng'>
             Matthew Chukwu
           </Link>
-          .
         </Text>
       </Box>
     </Box>
