@@ -10,9 +10,6 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import { BsWhatsapp } from "react-icons/bs";
-import { MdOutlineMarkEmailRead } from "react-icons/md";
-import { RiFacebookFill } from "react-icons/ri";
 import EmailLink from "./links/EmailLink";
 import FacebookLink from "./links/FacebookLink";
 import WhatsAppLink from "./links/WhatsAppLink";
@@ -65,7 +62,7 @@ function NavFooter() {
           &copy; 2022 Ada Nomeh Unateze Beauty Pageant, all rights reserved.
         </Text>
         <Text mt='2' fontSize='sm' color='gray'>
-          Designed and developed by {' '}
+          Developed and sponsored by {' '}
           <Link
             isExternal
             color='blue.500'

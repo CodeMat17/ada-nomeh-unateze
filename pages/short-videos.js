@@ -13,6 +13,10 @@ function ShortVideos() {
         <ShortVideosCard />
         <ShortVideosCard />
         <ShortVideosCard />
+        <ShortVideosCard />
+        <ShortVideosCard />
+        <ShortVideosCard />
+        <ShortVideosCard />
       </SimpleGrid>
     </Box>
   );
