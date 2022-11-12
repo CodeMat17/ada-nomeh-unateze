@@ -10,7 +10,7 @@ import {
 import Image from "next/image";
 import { TbClick } from "react-icons/tb";
 
-function HeroSection() {
+function HeroSection({ image }) {
   return (
     <Box pt={[8, 12, 20]} maxW='6xl' mx='auto' minH='96'>
       <Flex
@@ -29,7 +29,7 @@ function HeroSection() {
           h={["350", "400px"]}>
           <Image
             alt='beauty queens'
-            src='/heroins.webp'
+            src={image}
             priority
             layout='fill'
             objectFit='cover'
@@ -122,8 +122,11 @@ function HeroSection() {
             Beauty Pageant
           </Text>
 
-          <Box pt='8' pb='16'>
+          <Text pt='8'>For enquires or sponsorship</Text>
+          <Box pb='16'>
             <Button
+              as='a'
+              href='mailto:adanomehunateze@gmail.com'
               rightIcon={<TbClick />}
               letterSpacing='1px'
               size='lg'
@@ -131,7 +134,7 @@ function HeroSection() {
               color='gray.100'
               _hover={{ bgGradient: "linear(to-r,  purple.500, yellow.500)" }}>
               {/* APPLICATION FORM */}
-              2022 / 2023
+              CONTACT US
             </Button>
           </Box>
         </VStack>

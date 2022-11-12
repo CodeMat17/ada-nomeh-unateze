@@ -4,5 +4,5 @@ export const menuList = [
   { id: 3, item: "CONTESTANTS", url: "/contestants" },
   { id: 4, item: "WINNERS", url: "/winners" },
   { id: 5, item: "SHORT-VIDEOS", url: "/short-videos" },
-  { id: 6, item: "NEWS", url: "/news" },
+  { id: 6, item: "UPDATE", url: "/update" },
 ];

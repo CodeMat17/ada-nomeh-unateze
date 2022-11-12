@@ -16,8 +16,8 @@ function contestants() {
         <ContestantsCard />
       </SimpleGrid> */}
         <VStack mt='' color='gray'>
-          <Spinner />
-          <Text mt='2' fontWeight='semibold' fontSize='lg' letterSpacing='1px'>
+          {/* <Spinner /> */}
+          <Text mt='2' fontWeight='semibold' fontSize='2xl' letterSpacing='1px'>
             Coming soon!!!
           </Text>
         </VStack>

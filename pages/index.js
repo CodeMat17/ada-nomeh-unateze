@@ -5,7 +5,15 @@ import NavHeader from "../components/NavHeader";
 import Overview from "../components/Overview";
 import PastWinners from "../components/PastWinners";
 
-export default function Home() {
+export const getStaticProps = () => {
+  return {
+    props: {
+      image: "/heroins.webp",
+    },
+  };
+}
+
+export default function Home({image}) {
   return (
     <div>
       <Head>
@@ -19,10 +27,10 @@ export default function Home() {
 
       <main>
         {/* <NavHeader /> */}
-        <HeroSection />
+        <HeroSection image={image} />
         <Overview />
         <PastWinners />
-        <ApllicationForm />
+        {/* <ApllicationForm /> */}
       </main>
     </div>
   );
