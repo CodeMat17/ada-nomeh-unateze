@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function BannerCard({ title, url }) {
   return (
-    <Box pos='relative' w='100%' h={["100px", "130px", "180px", "200px"]}>
+    <Box pos='relative' w='100%' h={["100px", "130px"]}>
       <Image
         alt='banner'
         src={url}

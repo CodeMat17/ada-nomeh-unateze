@@ -10,7 +10,8 @@ import {
 import Image from "next/image";
 import { TbClick } from "react-icons/tb";
 
-function HeroSection({ image }) {
+function HeroSection({ title, subtitle, image, tag }) {
+
   return (
     <Box pt={[8, 12, 20]} maxW='6xl' mx='auto' minH='96'>
       <Flex
@@ -29,7 +30,7 @@ function HeroSection({ image }) {
           h={["350", "400px"]}>
           <Image
             alt='beauty queens'
-            src={image}
+            src={`https:${image.file.url}`}
             priority
             layout='fill'
             objectFit='cover'
@@ -43,7 +44,7 @@ function HeroSection({ image }) {
             fontFamily='font1'
             fontSize='6xl'
             color='red'>
-            Welcome to
+           {tag}
           </Text>
           <Circle
             pos='absolute'
@@ -101,7 +102,7 @@ function HeroSection({ image }) {
             fontFamily='font1'
             fontSize='6xl'
             color='red'>
-            Welcome to
+          {tag}
           </Text>
 
           <Heading
@@ -111,7 +112,7 @@ function HeroSection({ image }) {
             size={["3xl"]}
             bgGradient='linear(to-l, #7928CA, orange)'
             bgClip='text'>
-            ADA NOMEH UNATEZE
+            {title}
           </Heading>
 
           <Text
@@ -119,7 +120,7 @@ function HeroSection({ image }) {
             fontFamily='font1'
             fontSize='5xl'
             color='red'>
-            Beauty Pageant
+            {subtitle}
           </Text>
 
           <Text pt='8'>For enquires or sponsorship</Text>

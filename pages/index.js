@@ -1,19 +1,44 @@
 import Head from "next/head";
-import ApllicationForm from "../components/ApllicationForm";
 import HeroSection from "../components/HeroSection";
-import NavHeader from "../components/NavHeader";
 import Overview from "../components/Overview";
-import PastWinners from "../components/PastWinners";
+import Journey from "../components/Journey";
+import { client } from "../contentfulClient";
 
-export const getStaticProps = () => {
+export const getStaticProps = async () => {
+  const hero = await client.getEntries({
+    content_type: "heroSection",
+  });
+
+  const overview = await client.getEntries({
+    content_type: "overview",
+  });
+
+  const cleanedHero = hero.items.map((item) => {
+    const image = item.fields.image.fields;
+
+    return {
+      ...item.fields,
+      image,
+    };
+  });
+
+  const cleanedOverview = overview.items.map((item) => {
+    return {
+      ...item.fields,
+    };
+  });
+
   return {
     props: {
-      image: "/heroins.webp",
+      cleanedHero,
+      cleanedOverview,
     },
+    revalidate: 2,
   };
-}
+};
 
-export default function Home({image}) {
+export default function Home({ cleanedHero, cleanedOverview }) {
+
   return (
     <div>
       <Head>
@@ -26,10 +51,17 @@ export default function Home({image}) {
       </Head>
 
       <main>
-        {/* <NavHeader /> */}
-        <HeroSection image={image} />
-        <Overview />
-        <PastWinners />
+        {cleanedHero &&
+          cleanedHero.map((item, index) => (
+            <HeroSection key={index} {...item} />
+          ))}
+
+        {cleanedOverview &&
+          cleanedOverview.map((item, index) => (
+            <Overview key={index} {...item} />
+          ))}
+
+        <Journey />
         {/* <ApllicationForm /> */}
       </main>
     </div>
