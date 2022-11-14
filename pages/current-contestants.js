@@ -20,7 +20,7 @@ function contestants({ currentcontestants }) {
   const title = "CONTESTANTS";
   const url = "/banner.webp";
 
-  if (currentcontestants.length <= 0) {
+  if (!currentcontestants || currentcontestants.length <= 0) {
     return (
       <Text textAlign='center' py='48' fontSize='2xl' fontWeight='bold'>
         Coming Soon!
