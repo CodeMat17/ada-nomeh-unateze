@@ -16,7 +16,7 @@ function DesktopMenu() {
               transform: "translateY(-5px)",
               transitionDuration: "0.2s",
               transitionTimingFunction: "ease-in-out",
-              shadow: "md",
+         
             }}
             variant='ghost'
             as='a'
