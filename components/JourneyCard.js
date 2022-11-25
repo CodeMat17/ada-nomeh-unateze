@@ -9,8 +9,8 @@ const JourneyCard = ({img, title, link}) => {
       borderColor='gray.500'
       shadow='lg'
       rounded='md'
-      py='8'
-      w='250px'
+      py='8' px='4'
+      w='270px'
       mx='auto'>
       <Box pos='relative' w='150' h='150'>
         <Image
