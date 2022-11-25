@@ -11,8 +11,8 @@ function DesktopMenu() {
           <Button
             color={linkColor}
             _hover={{
-              bgGradient: "linear(to-r, transparent, yellow.600)",
-              color: "white",
+
+              color: "yellow.600",
               transform: "translateY(-5px)",
               transitionDuration: "0.2s",
               transitionTimingFunction: "ease-in-out",

@@ -57,9 +57,8 @@ function MobileMenu() {
                   w='100%'
                   color={linkColor}
                   _hover={{
-                    bgGradient:
-                      "linear(to-r, transparent, transparent, yellow.600)",
-                    color: "gray.400",
+
+                    color: "yellow.600",
                     transform: "translateX(-5px)",
                     transitionDuration: "0.2s",
                     transitionTimingFunction: "ease-in-out",
